@@ -1,0 +1,192 @@
+/*
+Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24
+/ 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+      
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48
+/ 64 / 80 / 96 / 128
+
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* 62.5% = 10px / 16px = 0.625  */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.section-main {
+  max-width: 120rem;
+
+  padding: 4.8rem 0;
+  margin: 0 auto;
+}
+
+.heading-quiz {
+  text-align: center;
+  color: #333;
+  font-size: 5.2rem;
+  font-weight: 700;
+
+  margin-bottom: 2.4rem;
+}
+
+.language-container {
+  display: flex;
+
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 3.2rem;
+}
+
+.lang-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.language {
+  display: inline-block;
+
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+}
+
+.heading-difficulty {
+  text-align: center;
+  color: #333;
+  font-size: 4.4rem;
+  font-weight: 600;
+
+  margin-bottom: 2.4rem;
+}
+
+.difficulties {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.easy-card {
+  background-color: #b2f2bb;
+  border-radius: 16px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+
+  padding-top: 3.6rem;
+}
+
+.normal-card {
+  background-color: #ffec99;
+  border-radius: 16px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+
+  padding-top: 3.6rem;
+}
+
+.hard-card {
+  background-color: #ffc9c9;
+  border-radius: 16px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+
+  padding-top: 3.6rem;
+}
+
+.card-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333;
+
+  margin-bottom: 2.4rem;
+}
+
+.list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  height: 14rem;
+
+  padding: 0 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  font-size: 2rem;
+  color: #444;
+}
+
+/* Для корректного отображения иконки. Иначе уменьшается размер */
+.list-block {
+  display: inline-block;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.start-button {
+  display: block;
+  text-align: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.3s;
+  
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding: 2.4rem 0;
+}
+
+.start-button.easy:link,
+.start-button.easy:visited {
+  background-color: #69db7c;
+}
+
+.start-button.easy:hover,
+.start-button.easy:active {
+  background-color: #40c057;
+}
+
+.start-button.normal:link,
+.start-button.normal:visited {
+  background-color: #ffd43b;
+}
+.start-button.normal:hover,
+.start-button.normal:active {
+  background-color: #fab005;
+}
+
+.start-button.hard:link,
+.start-button.hard:visited {
+  background-color: #ff8787;
+}
+
+.start-button.hard:hover,
+.start-button.hard:active {
+  background-color: #fa5252;
+}

@@ -1,0 +1,105 @@
+/* rem and em do NOT depend on HTML font-size in media-queries! 
+Instead, 1 rem = 1em = 16px */
+
+/***************************************/
+/* Above 1200px (Desktops) */
+/***************************************/
+
+/***************************************/
+/* Below 75 * 16 = 1200px (Landscape Tablets) */
+/***************************************/
+@media (max-width: 75em){
+  html {
+    /* 56.25% = 9px / 16px = 0.5625 */
+    font-size: 56.25%;
+  }
+
+  .difficulties {
+    grid-template-columns: auto 0.3fr 0.3fr 0.3fr auto;
+    gap: 2.4rem;
+  }
+
+  .easy-card {
+    grid-column: 2 / 3;
+  }
+
+  .list {
+    height: 17rem;
+
+    padding: 0 2rem;
+  }
+}
+
+/***************************************/
+/* Below 57 * 16 = 912px (Tablets) */
+/***************************************/
+@media (max-width: 56em){
+  html {
+    /* 50% = 8px / 16px = 0.50 */
+    font-size: 50%;
+  }
+
+  .difficulties {
+    grid-template-columns: 0.5fr auto auto auto auto 0.5fr;
+  }
+
+  .easy-card {
+    grid-column: 2 / 4;
+  }
+
+  .normal-card {
+    grid-column: 4 / 6;;
+  }
+
+  .hard-card {
+    grid-column: 3 / 5;
+  }
+
+  .list {
+    height: 14rem;
+
+    padding: 0 2rem;
+  }
+}
+
+/***************************************/
+/* Below 28 * 16 = 448px (Phones) */
+/***************************************/
+@media (max-width: 28em){
+  html {
+    /* 43.75% = 7px / 16px = 0.4375 */
+    font-size: 43.75%;
+  }
+
+  .section-main {
+    padding: 3.6rem 0;
+  }
+
+  .heading-quiz {
+    margin-bottom: 2rem;
+  }
+
+  .heading-difficulty {
+    font-size: 3.6rem;
+
+    padding: 0 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .difficulties {
+    grid-template-columns: auto 0.7fr auto;
+    gap: 3.6rem;
+  }
+
+  .easy-card {
+    grid-column: 2 / 3;
+  }
+
+  .normal-card {
+    grid-column: 2 / 3;;
+  }
+
+  .hard-card {
+    grid-column: 2 / 3;
+  }
+}
